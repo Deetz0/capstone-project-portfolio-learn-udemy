@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+    height: 75px;
+    width: 100%;
+    z-index: 1;
+}
+
+.container-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.name > p {
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;  
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.notpfp {
+    display: flex;
+    gap: 20px;
+}
+
+.notpfp div button {
+    font-family: 'Roboto Slab', serif;  
+    font-size: 17.5px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    padding: 7.5px 15px;
+    background-color: rgb(120, 119, 119);
+    color: white;
+    outline: transparent;
+}
+
+/* Hero */
+.container-2 {
+    display: flex;
+    margin-top: 65px;
+    height: 700px;
+    width: 100%;
+    justify-content: center;
+    background-color: #F9FBE7;
+}
+
+.all {
+    text-align: center;
+}
+
+.all h1 {
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    font-size: 100px;
+    margin-top: 150px;
+    margin-bottom: 0;
+}
+
+.all h2 {
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    letter-spacing: 3px;  
+}
+
+h2 > span {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+.all > .desktop {
+    position: relative;
+    height: 275px;
+    top: 102px;
+}
+
+.duck {
+    margin-top: 90px;
+    position: absolute;
+    height: 100px;
+}
+
+.l {
+    left: 250px;
+    transform: scaleX(-1);
+}
+
+.r {
+    right: 250px;
+}
+
+/* Resume */
+.container-3 {
+    height: 500px;
+    width: 100%;
+    background-color: #F0EDD4;
+}
+
+.grid-edu, .grid-projects {
+    display: grid;
+    grid-template: repeat(2, 100px) / repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 10px;
+}
+
+.school-1, .projects-1 {
+    display: flex;
+    grid-column: span 3;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+
+.grid-projects {
+    margin-top: 25px;
+}
+
+.school-2, .school-3, .school-4, .projects-2, .projects-3, .projects-4 {
+    display: grid;
+    grid-template: 1fr 9fr / 2fr 8fr;
+}
+
+.isi-1 {
+    display: flex;
+    grid-row: span 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi-2 > * {
+    font-size: 15px;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.isi-3 > * {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 15px;
+}
+ 
+p > a {
+    text-decoration: none;
+    color: #ff8383;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+p > a:hover {
+    color: rgb(142, 142, 255);
+}
+
+.bebex, .pricingplan, .mondrian {
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 24px 24px 0 0;
+}
+
+/* About */
+.container-4 {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ECCDB4;
+}
+
+.mypicture > img {
+    border: 0px solid white;
+    border-radius: 100%;
+    height: 150px;
+}
+
+.justtext {
+    width: 750px;
+    color: rgb(76, 76, 76);
+}
+
+.justtext > h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+h3 + p {
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+/* Contact Me */
+.container-5 {
+    display: flex;
+    height: 175px;
+    width: 100%;
+    background-color: #FEA1A1;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-contact {
+    display: grid;
+    grid-template: 50px 50px / repeat(3, 100px);
+    gap: 15px;
+}
+
+.simpletext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 3;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.simpletext h3 {
+    margin: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons > a > img {
+    height: 35px;
+} 
